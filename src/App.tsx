@@ -32,7 +32,6 @@ const App: React.FC<AppProps> = (props) => {
       </div>
       </Col>
       <Col>
-        {/* <div>{`Data: ${moment().format('L')} ${moment().format('LTS')}`}</div> */}
         
         <div>
         <span className={styles.title}>Data: </span><span>{`${moment().format('L')} ${moment().format('LTS')}`}</span>
