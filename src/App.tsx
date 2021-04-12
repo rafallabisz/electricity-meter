@@ -32,7 +32,32 @@ const App: React.FC<AppProps> = (props) => {
       </div>
       </Col>
       <Col>
-        <div>{`Data: ${moment().format('L')} ${moment().format('LTS')}`}</div>
+        {/* <div>{`Data: ${moment().format('L')} ${moment().format('LTS')}`}</div> */}
+        
+        <div>
+        <span className={styles.title}>Data: </span><span>{`${moment().format('L')} ${moment().format('LTS')}`}</span>
+        </div>
+        
+        <div>
+        <span className={styles.title}>Adres PPE </span><span>00-000 Miasto, ulica 1/2</span>
+        </div>
+        
+        <div>
+        <span className={styles.title}>Sprzedawca </span><span>Energa-Obrót SA</span>
+        </div>
+     
+        <div>
+        <span className={styles.title}>Okres umowy </span><span>Od 2013-01-01</span>
+        </div>
+     
+        <div>
+        <span className={styles.title}>Numer PPE </span><span>PL003700000000009</span>
+        </div>
+     
+        <div>
+        <span className={styles.title}>Taryfa </span><span>G12</span>
+        </div>
+ 
       </Col>
       </Row>
       </Container>
