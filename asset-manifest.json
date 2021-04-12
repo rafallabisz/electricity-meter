@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/electricity-meter/static/css/main.99aa1e72.chunk.css",
-    "main.js": "/electricity-meter/static/js/main.e500a92f.chunk.js",
-    "main.js.map": "/electricity-meter/static/js/main.e500a92f.chunk.js.map",
+    "main.css": "/electricity-meter/static/css/main.3e58aedc.chunk.css",
+    "main.js": "/electricity-meter/static/js/main.6014d8c4.chunk.js",
+    "main.js.map": "/electricity-meter/static/js/main.6014d8c4.chunk.js.map",
     "runtime-main.js": "/electricity-meter/static/js/runtime-main.0b8b6eee.js",
     "runtime-main.js.map": "/electricity-meter/static/js/runtime-main.0b8b6eee.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/electricity-meter/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.49756cda.chunk.js": "/electricity-meter/static/js/2.49756cda.chunk.js",
-    "static/js/2.49756cda.chunk.js.map": "/electricity-meter/static/js/2.49756cda.chunk.js.map",
+    "static/js/2.f579300a.chunk.js": "/electricity-meter/static/js/2.f579300a.chunk.js",
+    "static/js/2.f579300a.chunk.js.map": "/electricity-meter/static/js/2.f579300a.chunk.js.map",
     "static/js/3.fe0944e9.chunk.js": "/electricity-meter/static/js/3.fe0944e9.chunk.js",
     "static/js/3.fe0944e9.chunk.js.map": "/electricity-meter/static/js/3.fe0944e9.chunk.js.map",
     "index.html": "/electricity-meter/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/electricity-meter/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.99aa1e72.chunk.css.map": "/electricity-meter/static/css/main.99aa1e72.chunk.css.map",
-    "static/js/2.49756cda.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.49756cda.chunk.js.LICENSE.txt",
+    "static/css/main.3e58aedc.chunk.css.map": "/electricity-meter/static/css/main.3e58aedc.chunk.css.map",
+    "static/js/2.f579300a.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.f579300a.chunk.js.LICENSE.txt",
     "static/media/electricity-meter.38beccaa.jpg": "/electricity-meter/static/media/electricity-meter.38beccaa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0b8b6eee.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.49756cda.chunk.js",
-    "static/css/main.99aa1e72.chunk.css",
-    "static/js/main.e500a92f.chunk.js"
+    "static/js/2.f579300a.chunk.js",
+    "static/css/main.3e58aedc.chunk.css",
+    "static/js/main.6014d8c4.chunk.js"
   ]
 }
