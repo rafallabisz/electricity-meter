@@ -28,7 +28,7 @@ const App: React.FC<AppProps> = (props) => {
   },[currentConsumption])
 
   const getRndInteger = (min:number, max:number) => {
-    return Math.random() * (max - min + 0.01);
+    return Math.random() * (max - min + 0.5);
   }
 
   return (
@@ -72,10 +72,10 @@ const App: React.FC<AppProps> = (props) => {
         <span className={styles.title}>Aktualne zużycie </span><span>{`${currentConsumption.toFixed(2)} kWh/doba`}</span>
         </div>
         <div>
-        <span className={styles.title}>Minimalne zużycie w ciągu dnia </span><span>{`0.12 kWh/doba`}</span>
+        <span className={styles.title}>Minimalne zużycie w ciągu dnia </span><span>{`0.06 kWh/doba`}</span>
         </div>
         <div>
-        <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.15 kWh/doba`}</span>
+        <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.95 kWh/doba`}</span>
         </div>
         </section>
       </Col>
