@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.scss';
 import moment from "moment";
 import 'moment/locale/pl'
+import Background from './assets/background.jpg'
 moment.locale('pl');
 
 interface AppProps {
@@ -18,7 +19,7 @@ const App: React.FC<AppProps> = (props) => {
 
   useEffect(()=>{
       // const timer = setInterval(()=> setDate(new Date()),1000);
-    const minRange = 0.15;
+    const minRange = 0.2;
     const maxRange = 2;
     const timer = setInterval(()=> setCurrentConsumption(getRndInteger(minRange,maxRange)),5000)
      return function cleanup(){
@@ -34,7 +35,7 @@ const App: React.FC<AppProps> = (props) => {
   }
 
   return (
-    <main className={styles.mainWrap}>
+    <main className={styles.mainWrap} style={{background:`url(${Background})`}}>
       <Container>
         <Row>
           <Col>
@@ -45,6 +46,7 @@ const App: React.FC<AppProps> = (props) => {
       </Col>
       <Col>
         
+        <section className={styles.containerData}>
         <div>
         <span className={styles.title}>Data: </span><span>{`${moment().format('L')} ${moment().format('LTS')}`}</span>
         </div>
@@ -78,7 +80,7 @@ const App: React.FC<AppProps> = (props) => {
         <div>
         <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.15 kWh/doba`}</span>
         </div>
- 
+        </section>
       </Col>
       </Row>
       </Container>
