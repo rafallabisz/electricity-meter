@@ -14,13 +14,13 @@ interface AppProps {
 const App: React.FC<AppProps> = (props) => {
   const [date,setDate]=useState(new Date());
 
-  const [currentConsumption,setCurrentConsumption] = useState(20);
+  const [currentConsumption,setCurrentConsumption] = useState(0.85);
 
   useEffect(()=>{
       // const timer = setInterval(()=> setDate(new Date()),1000);
-    const minRange = 5;
-    const maxRange = 150;
-    const timer = setInterval(()=> setCurrentConsumption(getRndInteger(minRange,maxRange)),10000)
+    const minRange = 0.15;
+    const maxRange = 2;
+    const timer = setInterval(()=> setCurrentConsumption(getRndInteger(minRange,maxRange)),5000)
      return function cleanup(){
        clearInterval(timer)
      } 
@@ -29,7 +29,8 @@ const App: React.FC<AppProps> = (props) => {
   console.log(currentConsumption);
   
   const getRndInteger = (min:number, max:number) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.random() * (max - min + 0.01);
+    // return Math.floor(Math.random() * (max - min + 0.01)) + min;
   }
 
   return (
@@ -69,13 +70,13 @@ const App: React.FC<AppProps> = (props) => {
         </div>
        
         <div>
-        <span className={styles.title}>Aktualne zużycie </span><span>{`${currentConsumption}kWh`}</span>
+        <span className={styles.title}>Aktualne zużycie </span><span>{`${currentConsumption.toFixed(2)} kWh/doba`}</span>
         </div>
         <div>
-        <span className={styles.title}>Minimalne zużycie w ciągu dnia </span><span>{`4 kWh`}</span>
+        <span className={styles.title}>Minimalne zużycie w ciągu dnia </span><span>{`0.12 kWh/doba`}</span>
         </div>
         <div>
-        <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`170 kWh`}</span>
+        <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.15 kWh/doba`}</span>
         </div>
  
       </Col>
