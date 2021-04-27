@@ -6,6 +6,7 @@ import styles from './App.module.scss';
 import moment from "moment";
 import 'moment/locale/pl'
 import Background from './assets/background.jpg'
+import Switch from "react-bootstrap/esm/Switch";
 moment.locale('pl');
 
 interface AppProps {
@@ -16,6 +17,7 @@ const App: React.FC<AppProps> = (props) => {
   const [date,setDate]=useState(new Date());
 
   const [currentConsumption,setCurrentConsumption] = useState(0.85);
+  const [nightZone,setNightZone]=useState(false);
 
   useEffect(()=>{
       // const timer = setInterval(()=> setDate(new Date()),1000);
@@ -29,6 +31,10 @@ const App: React.FC<AppProps> = (props) => {
 
   const getRndInteger = (min:number, max:number) => {
     return Math.random() * (max - min + 0.5);
+  }
+
+  const handleChangeSwitch = ()=>{
+setNightZone(prev=>!prev)
   }
 
   return (
@@ -77,6 +83,26 @@ const App: React.FC<AppProps> = (props) => {
         <div>
         <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.95 kWh/doba`}</span>
         </div>
+
+        <div className={styles.zoneContainer}>
+          <span onClick={()=>setNightZone(false)}>Strefa dzienna</span>
+        <Switch
+            checked={nightZone}
+            onChange={handleChangeSwitch}
+            onColor="#86d3ff"
+            onHandleColor="#2693e6"
+            handleDiameter={30}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+            height={20}
+            width={48}
+            className="react-switch"
+            id="material-switch"
+          />
+          <span onClick={()=>setNightZone(true)}>Strefa nocna</span>
+          </div>
         </section>
       </Col>
       </Row>
