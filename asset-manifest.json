@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/electricity-meter/static/css/main.eec77a82.chunk.css",
-    "main.js": "/electricity-meter/static/js/main.f68fdc2c.chunk.js",
-    "main.js.map": "/electricity-meter/static/js/main.f68fdc2c.chunk.js.map",
+    "main.css": "/electricity-meter/static/css/main.7a1a3c3c.chunk.css",
+    "main.js": "/electricity-meter/static/js/main.a50c8c66.chunk.js",
+    "main.js.map": "/electricity-meter/static/js/main.a50c8c66.chunk.js.map",
     "runtime-main.js": "/electricity-meter/static/js/runtime-main.0b8b6eee.js",
     "runtime-main.js.map": "/electricity-meter/static/js/runtime-main.0b8b6eee.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/electricity-meter/static/css/2.4c97ca4f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.fe0944e9.chunk.js.map": "/electricity-meter/static/js/3.fe0944e9.chunk.js.map",
     "index.html": "/electricity-meter/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/electricity-meter/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.eec77a82.chunk.css.map": "/electricity-meter/static/css/main.eec77a82.chunk.css.map",
+    "static/css/main.7a1a3c3c.chunk.css.map": "/electricity-meter/static/css/main.7a1a3c3c.chunk.css.map",
     "static/js/2.ccaf4668.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.ccaf4668.chunk.js.LICENSE.txt",
     "static/media/electricity-meter.38beccaa.jpg": "/electricity-meter/static/media/electricity-meter.38beccaa.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.0b8b6eee.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.ccaf4668.chunk.js",
-    "static/css/main.eec77a82.chunk.css",
-    "static/js/main.f68fdc2c.chunk.js"
+    "static/css/main.7a1a3c3c.chunk.css",
+    "static/js/main.a50c8c66.chunk.js"
   ]
 }
