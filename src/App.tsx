@@ -21,17 +21,14 @@ const App: React.FC<AppProps> = (props) => {
       // const timer = setInterval(()=> setDate(new Date()),1000);
     const minRange = 0.2;
     const maxRange = 2;
-    const timer = setInterval(()=> setCurrentConsumption(getRndInteger(minRange,maxRange)),5000)
+    const timer = setInterval(()=> setCurrentConsumption(getRndInteger(minRange,maxRange)),1000)
      return function cleanup(){
        clearInterval(timer)
      } 
   },[currentConsumption])
 
-  console.log(currentConsumption);
-  
   const getRndInteger = (min:number, max:number) => {
     return Math.random() * (max - min + 0.01);
-    // return Math.floor(Math.random() * (max - min + 0.01)) + min;
   }
 
   return (
