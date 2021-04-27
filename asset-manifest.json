@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/electricity-meter/static/css/main.eec77a82.chunk.css",
-    "main.js": "/electricity-meter/static/js/main.6014d8c4.chunk.js",
-    "main.js.map": "/electricity-meter/static/js/main.6014d8c4.chunk.js.map",
+    "main.js": "/electricity-meter/static/js/main.f68fdc2c.chunk.js",
+    "main.js.map": "/electricity-meter/static/js/main.f68fdc2c.chunk.js.map",
     "runtime-main.js": "/electricity-meter/static/js/runtime-main.0b8b6eee.js",
     "runtime-main.js.map": "/electricity-meter/static/js/runtime-main.0b8b6eee.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/electricity-meter/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f579300a.chunk.js": "/electricity-meter/static/js/2.f579300a.chunk.js",
-    "static/js/2.f579300a.chunk.js.map": "/electricity-meter/static/js/2.f579300a.chunk.js.map",
+    "static/js/2.ccaf4668.chunk.js": "/electricity-meter/static/js/2.ccaf4668.chunk.js",
+    "static/js/2.ccaf4668.chunk.js.map": "/electricity-meter/static/js/2.ccaf4668.chunk.js.map",
     "static/js/3.fe0944e9.chunk.js": "/electricity-meter/static/js/3.fe0944e9.chunk.js",
     "static/js/3.fe0944e9.chunk.js.map": "/electricity-meter/static/js/3.fe0944e9.chunk.js.map",
     "index.html": "/electricity-meter/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/electricity-meter/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.eec77a82.chunk.css.map": "/electricity-meter/static/css/main.eec77a82.chunk.css.map",
-    "static/js/2.f579300a.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.f579300a.chunk.js.LICENSE.txt",
+    "static/js/2.ccaf4668.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.ccaf4668.chunk.js.LICENSE.txt",
     "static/media/electricity-meter.38beccaa.jpg": "/electricity-meter/static/media/electricity-meter.38beccaa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0b8b6eee.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.f579300a.chunk.js",
+    "static/js/2.ccaf4668.chunk.js",
     "static/css/main.eec77a82.chunk.css",
-    "static/js/main.6014d8c4.chunk.js"
+    "static/js/main.f68fdc2c.chunk.js"
   ]
 }
