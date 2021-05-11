@@ -8,12 +8,12 @@ const Navbar: React.FC = () => {
     <nav className={`navbar navbar-light nav-bg`}>
       <ul className="navbar-nav nav-wrap">
         <li className="nav-item active">
-          <NavLink to={routes.main} className="nav-link">
+          <NavLink to={routes.main} className="nav-link" activeClassName='active-nav'>
             LICZNIK
           </NavLink>
         </li>
         <li className="nav-item active">
-          <NavLink to={routes.dashboard} className="nav-link">
+          <NavLink to={routes.dashboard} className="nav-link" activeClassName='active-nav'>
             WYKRESY
           </NavLink>
         </li>
