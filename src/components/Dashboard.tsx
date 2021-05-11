@@ -240,7 +240,7 @@ const Dashboard: React.FC<DashboardProps> = (props) => {
         <Row>
           <Col>
           <h3>Wykresy</h3>
-          <div id="main" style={{ height: '550px' }}></div>
+          <div id="main" style={{ height: '500px' }}></div>
           </Col>
         </Row>
       </Container>
