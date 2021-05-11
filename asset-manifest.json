@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/electricity-meter/static/css/main.56572779.chunk.css",
-    "main.js": "/electricity-meter/static/js/main.ffdab0ef.chunk.js",
-    "main.js.map": "/electricity-meter/static/js/main.ffdab0ef.chunk.js.map",
-    "runtime-main.js": "/electricity-meter/static/js/runtime-main.f708274f.js",
-    "runtime-main.js.map": "/electricity-meter/static/js/runtime-main.f708274f.js.map",
+    "main.js": "/electricity-meter/static/js/main.e0a76c33.chunk.js",
+    "main.js.map": "/electricity-meter/static/js/main.e0a76c33.chunk.js.map",
+    "runtime-main.js": "/electricity-meter/static/js/runtime-main.ec96209c.js",
+    "runtime-main.js.map": "/electricity-meter/static/js/runtime-main.ec96209c.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/electricity-meter/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.bc789438.chunk.js": "/electricity-meter/static/js/2.bc789438.chunk.js",
-    "static/js/2.bc789438.chunk.js.map": "/electricity-meter/static/js/2.bc789438.chunk.js.map",
-    "static/js/3.e1527cc9.chunk.js": "/electricity-meter/static/js/3.e1527cc9.chunk.js",
-    "static/js/3.e1527cc9.chunk.js.map": "/electricity-meter/static/js/3.e1527cc9.chunk.js.map",
+    "static/js/2.fc3562a8.chunk.js": "/electricity-meter/static/js/2.fc3562a8.chunk.js",
+    "static/js/2.fc3562a8.chunk.js.map": "/electricity-meter/static/js/2.fc3562a8.chunk.js.map",
+    "static/js/3.6da3f628.chunk.js": "/electricity-meter/static/js/3.6da3f628.chunk.js",
+    "static/js/3.6da3f628.chunk.js.map": "/electricity-meter/static/js/3.6da3f628.chunk.js.map",
     "index.html": "/electricity-meter/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/electricity-meter/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.56572779.chunk.css.map": "/electricity-meter/static/css/main.56572779.chunk.css.map",
-    "static/js/2.bc789438.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.bc789438.chunk.js.LICENSE.txt",
+    "static/js/2.fc3562a8.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.fc3562a8.chunk.js.LICENSE.txt",
     "static/media/background.3b070342.jpg": "/electricity-meter/static/media/background.3b070342.jpg",
     "static/media/electricity-meter.38beccaa.jpg": "/electricity-meter/static/media/electricity-meter.38beccaa.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f708274f.js",
+    "static/js/runtime-main.ec96209c.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.bc789438.chunk.js",
+    "static/js/2.fc3562a8.chunk.js",
     "static/css/main.56572779.chunk.css",
-    "static/js/main.ffdab0ef.chunk.js"
+    "static/js/main.e0a76c33.chunk.js"
   ]
 }
