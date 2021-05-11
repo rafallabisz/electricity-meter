@@ -78,10 +78,10 @@ setNightZone(prev=>!prev)
         <span className={styles.title}>Aktualne zużycie </span><span>{`${currentConsumption.toFixed(2)} kWh/doba`}</span>
         </div>
         <div>
-        <span className={styles.title}>Minimalne zużycie w ciągu dnia </span><span>{`0.06 kWh/doba`}</span>
+        <span className={styles.title}>Minimalne zużycie w ciągu dnia </span><span>{`0.05 kWh/doba`}</span>
         </div>
         <div>
-        <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.95 kWh/doba`}</span>
+        <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.97 kWh/doba`}</span>
         </div>
 
         <div className={styles.zoneContainer}>
