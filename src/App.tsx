@@ -2,6 +2,8 @@ import Dashboard from "./components/Dashboard"
 import ElectricityMeter from "./components/ElectricityMeter"
 import React from "react"
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
+import routes from "routes"
+import Navbar from "./components/Navbar"
 
 
 interface AppProps {
@@ -14,10 +16,11 @@ const App: React.FC<AppProps> = (props) => {
 
   return(
     <Router>
+      <Navbar/>
     <Switch>
-      <Route exact path={`/electricity-meter`} component={ElectricityMeter} />
-      <Route exact path={`/dashboard`} component={Dashboard} />
-      
+      <Route exact path={routes.main} component={ElectricityMeter} />
+      <Route exact path={routes.dashboard} component={Dashboard} />
+
     </Switch>
   </Router>
   )
