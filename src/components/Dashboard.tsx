@@ -58,7 +58,7 @@ export function getWeekRange(date: Date) {
   };
 }
 
-const values = [{date:'17-05-2021', data:[2.15, 1.75, 0,0,0,0,0]}, {date:'10-05-2021', data:[1.10, 2.75, 1.1, 0.82, 1.41,2.18,2.01]},{date:'03-05-2021', data:[0.85, 1.1, 1.05, 1.4, 1.1,2.98,2.01]}]
+const values = [{date:'17-05-2021', data:[2.15]}, {date:'10-05-2021', data:[1.10, 2.75, 1.1, 0.82, 1.41,2.18,2.01]},{date:'03-05-2021', data:[0.85, 1.1, 1.05, 1.4, 1.1,2.98,2.01]}]
 
 const Dashboard: React.FC<DashboardProps> = (props) => {
   const currentWeek = getWeekDays(getWeekRange(new Date()).from);
