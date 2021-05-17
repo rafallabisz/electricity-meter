@@ -83,9 +83,9 @@ setNightZone(prev=>!prev)
         <div>
         <span className={styles.title}>Maksymalne zużycie w ciągu dnia </span><span>{`2.97 kWh/doba`}</span>
         </div>
-        <div>
+        {/* <div>
         <span className={styles.title}>Energia pobrana całkowita w ciągu dnia </span><span>{`6.95 kWh/doba`}</span>
-        </div>
+        </div> */}
 
         <div className={styles.zoneContainer}>
           <span onClick={()=>setNightZone(false)}>Strefa dzienna</span>
