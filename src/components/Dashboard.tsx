@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import styles from '../App.module.scss';
 import Background from '../assets/background.jpg'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 // Include the locale utils designed for moment
 import * as echarts from 'echarts/core';
 // Import bar charts, all with Chart suffix
@@ -18,6 +18,11 @@ import {
 } from 'echarts/components';
 // Import the Canvas renderer, note that introducing the CanvasRenderer or SVGRenderer is a required step
 import { CanvasRenderer } from 'echarts/renderers';
+import DayPicker from "react-day-picker";
+import MomentLocaleUtils from 'react-day-picker/moment';
+import 'moment/locale/pl';
+import 'react-day-picker/lib/style.css';
+import moment from 'moment';
 
 // Combine an Option type with only required components and charts via ComposeOption
 type ECOption = echarts.ComposeOption<BarSeriesOption | LineSeriesOption | TitleComponentOption | GridComponentOption>;
@@ -38,12 +43,41 @@ interface DashboardProps {
   
 }
 
+export function getWeekDays(weekStart: Date) {
+  const days = [weekStart];
+  for (let i = 1; i < 7; i += 1) {
+    days.push(moment(weekStart).add(i, 'days').toDate());
+  }
+  return days;
+}
+
+export function getWeekRange(date: Date) {
+  return {
+    from: moment(date).startOf('week').toDate(),
+    to: moment(date).endOf('week').toDate(),
+  };
+}
+
 const Dashboard: React.FC<DashboardProps> = (props) => {
+  const currentWeek = getWeekDays(getWeekRange(new Date()).from);
+  const [selectedDays, setSelectedDays] = useState<Date[]>(currentWeek);
+
+  const handleDayChange = (date: Date) => {
+    setSelectedDays(getWeekDays(getWeekRange(date).from));
+  };
+
+  const handleWeekClick = (weekNumber: number, days: Date[], e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setSelectedDays(days);
+  };
+
 
   useEffect(()=>{
     let app: any = {};
     const chartDom = document.getElementById('main')!;
     const myChart = echarts.init(chartDom);
+
+    const xAxisSeries = selectedDays.map(date=> moment(date).format('DD-MM-YYYY'));
+    console.log(xAxisSeries,'xAXISSERIES')
 
     let option: ECOption;
 
@@ -182,7 +216,8 @@ const Dashboard: React.FC<DashboardProps> = (props) => {
         {
           type: 'category',
           axisTick: { show: false },
-          data: ['05.05.2021','06.05.2021','07.05.2021','08.05.2021','09.05.2021','10.05.2021','11.05.2021'],
+          data: xAxisSeries,
+          // data: ['05.05.2021','06.05.2021','07.05.2021','08.05.2021','09.05.2021','10.05.2021','11.05.2021'],
         },
       ],
       yAxis: [
@@ -233,13 +268,21 @@ const Dashboard: React.FC<DashboardProps> = (props) => {
 
     option && myChart.setOption(option, true);
 
-  },[])
+  },[selectedDays])
   return (
     <main className={styles.mainWrap} style={{background:`url(${Background})`}}>
       <Container>
         <Row>
           <Col>
           <h3>Wykresy</h3>
+          <DayPicker
+            showOutsideDays
+            selectedDays={selectedDays}
+            onDayClick={handleDayChange}
+            onWeekClick={handleWeekClick}
+            localeUtils={MomentLocaleUtils} locale={'pl'}
+            className={styles.calendarBgc}
+          />
           <div id="main" style={{ height: '500px' }}></div>
           </Col>
         </Row>
