@@ -58,9 +58,12 @@ export function getWeekRange(date: Date) {
   };
 }
 
+const values = [{date:'17-05-2021', data:[2.15, 1.75, 0,0,0,0,0]}, {date:'10-05-2021', data:[1.10, 2.75, 1.1, 0.82, 1.41,2.18,2.01]},{date:'03-05-2021', data:[0.85, 1.1, 1.05, 1.4, 1.1,2.98,2.01]}]
+
 const Dashboard: React.FC<DashboardProps> = (props) => {
   const currentWeek = getWeekDays(getWeekRange(new Date()).from);
   const [selectedDays, setSelectedDays] = useState<Date[]>(currentWeek);
+  const startDate = moment(selectedDays[0]).format('DD-MM-YYYY');
 
   const handleDayChange = (date: Date) => {
     setSelectedDays(getWeekDays(getWeekRange(date).from));
@@ -77,7 +80,11 @@ const Dashboard: React.FC<DashboardProps> = (props) => {
     const myChart = echarts.init(chartDom);
 
     const xAxisSeries = selectedDays.map(date=> moment(date).format('DD-MM-YYYY'));
-    console.log(xAxisSeries,'xAXISSERIES')
+
+    const dataSeries = values.filter(value=> value.date === startDate);    
+
+    console.log(dataSeries,'dataSeries');
+    
 
     let option: ECOption;
 
@@ -185,7 +192,7 @@ const Dashboard: React.FC<DashboardProps> = (props) => {
           color: 'gray',
           fontSize: 18,
         },
-        text: 'Średnie zużycie w ciągu dnia',
+        text: !!dataSeries.length? 'Średnie zużycie w ciągu dnia':"Brak danych", 
         left: 'center',
         top: 'top',
       },
@@ -234,7 +241,8 @@ const Dashboard: React.FC<DashboardProps> = (props) => {
             emphasis: {
                 focus: 'series'
             },
-            data: [2.15, 1.75, 2.34, 2.82, 2.41,2.22,2.17]
+            data: dataSeries[0]? dataSeries[0].data:[]
+            // data: [2.15, 1.75, 2.34, 2.82, 2.41,2.22,2.17]
         },
         // {
         //     name: 'Steppe',
@@ -268,13 +276,14 @@ const Dashboard: React.FC<DashboardProps> = (props) => {
 
     option && myChart.setOption(option, true);
 
-  },[selectedDays])
+  },[selectedDays, startDate])
   return (
     <main className={styles.mainWrap} style={{background:`url(${Background})`}}>
       <Container>
         <Row>
           <Col>
-          <h3>Wykresy</h3>
+          <h3>Wykres</h3>
+          <h6>Wybierz datę</h6>
           <DayPicker
             showOutsideDays
             selectedDays={selectedDays}
