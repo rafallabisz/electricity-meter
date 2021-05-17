@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/electricity-meter/static/css/main.fbd0a39d.chunk.css",
-    "main.js": "/electricity-meter/static/js/main.08f68a32.chunk.js",
-    "main.js.map": "/electricity-meter/static/js/main.08f68a32.chunk.js.map",
+    "main.js": "/electricity-meter/static/js/main.89c612a7.chunk.js",
+    "main.js.map": "/electricity-meter/static/js/main.89c612a7.chunk.js.map",
     "runtime-main.js": "/electricity-meter/static/js/runtime-main.8b9b6f9a.js",
     "runtime-main.js.map": "/electricity-meter/static/js/runtime-main.8b9b6f9a.js.map",
     "static/css/2.dcaefb9f.chunk.css": "/electricity-meter/static/css/2.dcaefb9f.chunk.css",
-    "static/js/2.3ba29836.chunk.js": "/electricity-meter/static/js/2.3ba29836.chunk.js",
-    "static/js/2.3ba29836.chunk.js.map": "/electricity-meter/static/js/2.3ba29836.chunk.js.map",
+    "static/js/2.05f3a6fd.chunk.js": "/electricity-meter/static/js/2.05f3a6fd.chunk.js",
+    "static/js/2.05f3a6fd.chunk.js.map": "/electricity-meter/static/js/2.05f3a6fd.chunk.js.map",
     "static/js/3.8b0b248c.chunk.js": "/electricity-meter/static/js/3.8b0b248c.chunk.js",
     "static/js/3.8b0b248c.chunk.js.map": "/electricity-meter/static/js/3.8b0b248c.chunk.js.map",
     "index.html": "/electricity-meter/index.html",
     "static/css/2.dcaefb9f.chunk.css.map": "/electricity-meter/static/css/2.dcaefb9f.chunk.css.map",
     "static/css/main.fbd0a39d.chunk.css.map": "/electricity-meter/static/css/main.fbd0a39d.chunk.css.map",
-    "static/js/2.3ba29836.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.3ba29836.chunk.js.LICENSE.txt",
+    "static/js/2.05f3a6fd.chunk.js.LICENSE.txt": "/electricity-meter/static/js/2.05f3a6fd.chunk.js.LICENSE.txt",
     "static/media/background.3b070342.jpg": "/electricity-meter/static/media/background.3b070342.jpg",
     "static/media/electricity-meter.38beccaa.jpg": "/electricity-meter/static/media/electricity-meter.38beccaa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8b9b6f9a.js",
     "static/css/2.dcaefb9f.chunk.css",
-    "static/js/2.3ba29836.chunk.js",
+    "static/js/2.05f3a6fd.chunk.js",
     "static/css/main.fbd0a39d.chunk.css",
-    "static/js/main.08f68a32.chunk.js"
+    "static/js/main.89c612a7.chunk.js"
   ]
 }
